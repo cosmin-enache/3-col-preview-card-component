@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box; }
+
+h1 {
+  font-size: 2.2em !important;
+  font-family: 'Big Shoulders Display', cursive !important;
+  color: #f2f2f2 !important;
+  letter-spacing: 0px !important; }
+
+p {
+  font-size: 0.95em !important;
+  font-family: 'Lexend Deca', sans-serif;
+  color: rgba(255, 255, 255, 0.75); }
+
+button {
+  background: white;
+  padding: 8px 30px 12px 30px;
+  outline: none !important;
+  border: none !important;
+  border-radius: 40px !important;
+  width: 150px;
+  border: 2px solid transparent !important;
+  cursor: pointer;
+  transition: 0.3s; }
+  button:hover {
+    background: transparent;
+    border: 2px solid white !important;
+    color: white !important;
+    transition: 0.3s; }
+
+.container {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+
+.card {
+  width: 100%;
+  padding: 45px;
+  border-radius: 0px !important; }
+  .card .logo {
+    width: 60px;
+    height: auto; }
+  .card .heading {
+    margin: 35px 0px 30px 0px; }
+  .card .paragraph-wrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px; }
+
+#sedan {
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+  background: #e38826; }
+  #sedan button {
+    color: #e38826; }
+
+#suv {
+  background: #006970; }
+  #suv button {
+    color: #006970; }
+
+#luxury {
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+  background: #004241; }
+  #luxury button {
+    color: #004241; }
+
+@media (min-width: 376px) {
+  h1 {
+    font-size: 2.5em !important; }
+
+  p {
+    font-size: 1.05em !important; }
+
+  .row div {
+    padding: 0px !important; }
+
+  #sedan {
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border-top-left-radius: 8px !important; }
+
+  #luxury {
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-top-right-radius: 8px !important; }
+
+  .card {
+    height: 500px !important; }
+    .card .logo {
+      width: 68px;
+      height: auto; }
+    .card button {
+      position: absolute;
+      left: 45px;
+      bottom: 45px; }
+    .card .paragraph-wrapper {
+      width: 90%; } }
+
+/*# sourceMappingURL=style_main.css.map */

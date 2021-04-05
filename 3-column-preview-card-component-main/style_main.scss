@@ -1,0 +1,139 @@
+$sedans-col: hsl(31, 77%, 52%);
+$suvs-col: hsl(184, 100%, 22%);
+$luxury-col: hsl(179, 100%, 13%);
+
+$paragraph-col: hsla(0, 0%, 100%, 0.75);
+$other-col: hsl(0, 0%, 95%);
+
+$border-radius: 8px !important;
+$card-padding: 45px;
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.2em !important;
+  font-family: 'Big Shoulders Display', cursive !important;
+  color: $other-col !important;
+  letter-spacing: 0px !important;
+}
+
+p {
+  font-size: 0.95em !important;
+  font-family: 'Lexend Deca', sans-serif;
+  color: $paragraph-col;
+}
+
+button {
+  background: white;
+  padding: 8px 30px 12px 30px;
+  outline: none !important;
+  border: none !important;
+  border-radius: 40px !important;
+  width: 150px;
+  border: 2px solid transparent !important;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    background: transparent;
+    border: 2px solid white !important;
+    color: white !important;
+    transition: 0.3s;
+  }
+}
+
+.container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.card {
+  width: 100%;
+  padding: $card-padding;
+  border-radius: 0px !important;
+  .logo {
+    width: 60px;
+    height: auto;
+  }
+  .heading {
+    margin: 35px 0px 30px 0px;
+  }
+  .paragraph-wrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+#sedan {
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+  background: $sedans-col;
+  button {
+    color: $sedans-col;
+  }
+}
+
+#suv {
+  background: $suvs-col;
+  button {
+    color: $suvs-col;
+  }
+}
+
+#luxury {
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+  background: $luxury-col;
+  button {
+    color: $luxury-col;
+  }
+}
+
+
+@media (min-width: 376px) {
+  h1 {
+    font-size: 2.5em !important;
+  }
+
+  p {
+    font-size: 1.05em !important;
+  }
+
+
+
+  .row {
+    div {
+      padding: 0px !important;
+    }
+  }
+
+  #sedan {
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border-top-left-radius: $border-radius;
+  }
+
+  #luxury {
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-top-right-radius: $border-radius;
+  }
+
+  .card {
+    height: 500px !important;
+    .logo {
+      width: 68px;
+      height: auto;
+    }
+    button {
+      position: absolute;
+      left: $card-padding;
+      bottom: $card-padding;
+    }
+    .paragraph-wrapper {
+      width: 90%;
+    }
+  }
+}
